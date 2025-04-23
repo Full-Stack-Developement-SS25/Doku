@@ -3,8 +3,8 @@
 # Titelseite
 
 **Produktname:** PromptMaster  
-**Autoren:** [Name 1], [Name 2]  
-**Link zum Source Code Repository:** Wird nach Projektstart eingetragen
+**Autoren:** Mattis Wellenbüscher, Marvin Petschulat  
+**Link zum Source Code Repository:** https://github.com/orgs/Full-Stack-Developement-SS25/repositories
 
 **Inhaltsverzeichnis:**  
 * 1 Einführung  
@@ -42,6 +42,15 @@ Zusätzlich bietet die App ein Gamification-System mit Leveln, Abzeichen und opt
 
 Die App richtet sich an ein breites Publikum: Schüler:innen, Studierende, Berufstätige und Bildungseinrichtungen. Durch gezielte Schulung in KI-Kompetenzen wird ein gesellschaftlich zunehmend relevanter Bereich zugänglich gemacht.
 
+## 1.2 Abgrenzung
+Im Gegensatz zu bestehenden Lernplattformen wie LearnPrompting.org, die hauptsächlich theoretisches Wissen vermitteln, setzt PromptMaster auf einen interaktiven, spielerischen Lernansatz. Nutzer:innen erlernen das Prompten durch praktische Aufgaben, erhalten direktes Feedback zu ihren Eingaben und verbessern sich durch gezielte Wiederholung. Dabei motivieren Level, Abzeichen und ein Score-System dazu, kontinuierlich zu üben. Die App vermittelt das Wissen also nicht nur, sondern macht es anwendbar – und das auf unterhaltsame Weise.
+PromptMaster ist keine allgemeine E-Learning-Plattform und kein theoretisches Nachschlagewerk für KI oder Machine Learning. Die App ist nicht darauf ausgelegt, vollständige Lehrpläne zu ersetzen oder wissenschaftliche Tiefe in NLP zu vermitteln. Ebenso ist sie keine Chat-Anwendung oder ein Interface zur freien Nutzung von LLMs. Vielmehr liegt der Fokus auf der spielerischen und strukturierten Vermittlung von Prompting-Fähigkeiten anhand konkreter Aufgaben.
+
+## 1.3 Konkurrenzanalyse & Alternativen
+PromptMaster adressiert einen wachsenden Bedarf: das strukturierte Erlernen von Prompt Engineering für Large Language Models (LLMs). Alternativen zur App existieren in unterschiedlichen Formen – etwa als theoretisch geprägte Lernplattformen wie LearnPrompting.org, als praxisorientierte Tools wie PromptOK oder als KI-Entwicklungsumgebungen wie Promptmetheus. Auch das direkte Experimentieren mit KIs wie ChatGPT stellt für viele Nutzer:innen eine informelle Möglichkeit dar, sich mit Prompts auseinanderzusetzen. Zusätzlich gibt es klassische Ansätze wie Online-Kurse, PDF-Leitfäden oder Prompt-Sammlungen auf GitHub.
+
+Was diesen Ansätzen jedoch oft fehlt, ist ein strukturierter Lernpfad, gezieltes Feedback und eine motivierende Nutzerführung. PromptMaster schließt diese Lücke durch ein mobiles, gamifiziertes Konzept mit Level-System, Challenges und aufeinander aufbauenden Aufgaben. Die App hebt sich dadurch deutlich von anderen Lösungen ab und unterstützt Lernende aktiv bei der Verbesserung ihrer Prompt-Kompetenz – statt sie nur mit Inhalten zu versorgen.
+
 # 2 Anforderungen
 
 ## 2.1 Stakeholder
@@ -51,15 +60,30 @@ Die App richtet sich an ein breites Publikum: Schüler:innen, Studierende, Beruf
 | Nutzer:innen / Zielgruppe                   | Allgemein        | jederzeit erreichbar (App-User)           | Lernwillig, unterschiedliche Vorkenntnisse  | Bessere Prompter werden, Spaß beim Lernen        |
 | Bildungseinrichtungen                       | Schulen, Unis    | unterschiedlich                           | möchten moderne Kompetenzen vermitteln      | Motivation & KI-Kompetenz fördern                |
 | KI-Dienstleister (z. B. OpenAI, HuggingFace)| Drittanbieter    | abhängig von API-Nutzung                  | Zugriff auf LLMs                            | Integration ihrer Dienste, faire Nutzung         |
-| Entwickler:innen (Team)                     | [Name 1, Name 2] | jederzeit                                  | kennen Anforderungen & Architektur          | Projekt erfolgreich umsetzen, Note erhalten      |
+| Entwickler:innen (Team)                     | Mattis Wellenbüscher, Marvin Petschulat | marvin.petschulat@hsbi.de mattis.wellenbuescher@hsbi.de /jederzeit                                  | kennen Anforderungen & Architektur          | Projekt erfolgreich umsetzen, Note erhalten      |
+
+Der Markt für KI-Anwendungen und insbesondere für den Einsatz von LLMs wie ChatGPT, Gemini oder Claude wächst rasant. Gleichzeitig steigt der Bedarf an Kompetenzen im Umgang mit diesen Systemen – sowohl im Bildungsbereich als auch in der Wirtschaft. Unternehmen erwarten zunehmend, dass Mitarbeitende in der Lage sind, KI-Tools effizient zu nutzen. Auch Bildungseinrichtungen suchen nach modernen, praxisnahen Formaten, um diese Schlüsselkompetenzen zu vermitteln. Darüber hinaus besteht eine hohe Nutzerakzeptanz für gamifizierte Lern-Apps, was sich am Erfolg vergleichbarer Konzepte wie Duolingo zeigt. PromptMaster erfüllt diese Marktanforderungen durch eine niederschwellige, interaktive Lernlösung mit direktem Praxisbezug.
+
+## 2.1.1 Bedarfsanalyse
+
+Die Zielgruppe von PromptMaster umfasst sowohl Einsteiger:innen als auch fortgeschrittene Nutzer:innen im Umgang mit KI. Dazu zählen insbesondere Schüler:innen ab der Mittelstufe, Studierende aller Fachrichtungen sowie Berufstätige in wissensintensiven Bereichen. Das Bildungsniveau reicht dabei von allgemeinbildend bis akademisch. Die Vorerfahrung im Bereich Prompt Engineering ist meist gering – viele haben zwar KI-Tools wie ChatGPT ausprobiert, aber nie strukturiert gelernt, wie man diese effektiv nutzt.
+
+PromptMaster adressiert zentrale Bedürfnisse dieser Nutzergruppe: den Wunsch nach verständlichem Zugang zu KI-Werkzeugen, das gezielte, effektive Lernen von Prompt-Techniken sowie die Motivation, Fortschritte sichtbar zu machen. Durch einen schrittweisen Lernpfad, spielerische Elemente und direktes Feedback schafft die App eine motivierende Lernumgebung, die unabhängig vom technischen Hintergrund funktioniert. Auch Bildungseinrichtungen und Unternehmen erkennen zunehmend den Bedarf, KI-Kompetenzen praxisnah zu fördern – PromptMaster bietet dafür eine moderne, skalierbare Lösung.
+
+| Kategorie | Inhalt |
+|----------|--------|
+| **Stärken (Strengths)** | - Spielerischer Lernansatz (Gamification)<br>- Mobiloptimiert & iOS-fokussiert<br>- Strukturierter Lernpfad für KI-Kompetenz<br>- Einfache Einstiegshürde für breite Zielgruppen |
+| **Schwächen (Weaknesses)** | - Kein direkter Zugang zu Premium-LLMs (z. B. GPT-4)<br>- Ggf. eingeschränkte Bewertungsgenauigkeit durch Keyword-Matching<br>- Nur iOS, keine Android-Unterstützung (aktuell) |
+| **Chancen (Opportunities)** | - Wachsender Bildungs- & KI-Markt<br>- Einbindung in Schulen/Hochschulen<br>- Ausbau zum plattformübergreifenden Lernsystem<br>- Ergänzung durch Community-Features |
+| **Risiken (Threats)** | - Zeit- & Kapazitätsengpässe im studentischen Team<br>- Technische Komplexität bei der Bewertung<br>- Konkurrenz durch große KI-Anbieter mit Lernfunktionen<br>- Monetarisierung schwierig ohne Budget/Kapital |
+
 
 ## 2.2 Funktionale Anforderungen
 
 - Nutzer:innen können sich registrieren, einloggen und ihr Profil verwalten
 - Es gibt aufgabenbasierte Lerneinheiten, die nach Schwierigkeit gestaffelt sind
 - Nutzer:innen können Prompts eingeben, um Aufgaben zu lösen
-- KI gibt eine Antwort auf den Prompt zurück
-- Die Antwort wird auf relevante Schlüsselbegriffe geprüft und bewertet
+- Die Antwort wird auf relevante Schlüsselbegriffe geprüft und bewertet / KI gibt eine Antwort auf den Prompt zurück
 - Nutzer:innen erhalten Feedback & Verbesserungshinweise
 - Punkte/XP werden vergeben; Fortschritt wird gespeichert
 - Es gibt Level, Abzeichen, tägliche/wöchentliche Challenges
@@ -74,6 +98,7 @@ Die App richtet sich an ein breites Publikum: Schüler:innen, Studierende, Beruf
 - Flutter als Framework
 - Backend basiert auf Node.js mit REST API
 - Datenbank: PostgreSQL
+- (Anbindung an KI Dienst per API)
 
 ### 2.3.2 Betriebsbedingungen
 
@@ -85,16 +110,16 @@ Die App richtet sich an ein breites Publikum: Schüler:innen, Studierende, Beruf
 
 Qualitätsmerkmal     | sehr gut | gut | normal | nicht relevant
 ---------------------|----------|-----|--------|----------------
-Zuverlässigkeit      |    X     |     |        |       
-Fehlertoleranz       |    X     |     |        |       
+Zuverlässigkeit      |          |  X  |        |       
+Fehlertoleranz       |          |  X  |        |       
 Wiederherstellbarkeit|    X     |     |        |       
 Ordnungsmäßigkeit    |    X     |     |        |       
 Richtigkeit          |    X     |     |        |       
 Konformität          |          |  X  |        |       
-Benutzerfreundlichkeit|         |     |        |       
+Benutzerfreundlichkeit|         |  x  |        |       
 Installierbarkeit    |          |     |   X    |       
 Verständlichkeit     |    X     |     |        |       
-Erlernbarkeit        |          |  X  |        |       
+Erlernbarkeit        |    X     |     |        |       
 Bedienbarkeit        |          |  X  |        |       
 Zeitverhalten        |          |     |   X    |       
 Effizienz            |          |     |        |   X    
@@ -169,6 +194,11 @@ Ein Zustandsdiagramm zur Navigation folgt in Kapitel 3.5 Abläufe.
 | Nutzer | eine Upgrade-Option sehen | ich entscheiden kann, ob ich mehr Funktionen nutze | Upgrade-Möglichkeit klar angezeigt |
 | Nutzer | bei zu schlechten Prompts einen Hinweis erhalten | ich gezielter verbessern kann | Verbesserungshinweise erscheinen bei <50 % Score |
 
+## 2.6 Risikoanalyse
+Die Umsetzung von PromptMaster erscheint insgesamt als lohnenswertes und gut tragbares Projekt im Rahmen eines studentischen Semesters. Der erwartete Nutzen liegt sowohl im fachlichen Lernzuwachs der Teammitglieder (z. B. in Flutter, Backend-Architektur, KI-Verständnis), als auch in der Relevanz des Themas für die Zukunft der Arbeit und Bildung. Der Aufwand wurde realistisch geplant und auf die Teamgröße angepasst: Durch den Einsatz bewährter Technologien (Flutter, Node.js, Supabase) und klarer Aufgabenverteilung bleibt die technische Komplexität beherrschbar.
+
+Das Team verfügt über grundlegende Kenntnisse in Webentwicklung und Softwarearchitektur und ist bereit, sich eigenständig in neue Themen einzuarbeiten – insbesondere in die Bewertung und Analyse von Prompts. Risiken bestehen vor allem in der zeitlichen Belastung, dem Abstimmungsaufwand im Team sowie in der eingeschränkten Verfügbarkeit leistungsstarker KI-APIs (z. B. durch Kosten oder Limits). Auch die Genauigkeit der automatisierten Prompt-Bewertung könnte eine Herausforderung darstellen. Insgesamt stehen Aufwand und Nutzen jedoch in einem sinnvollen Verhältnis, und die Risiken sind bekannt, realistisch eingeschätzt und planbar.
+
 # 3 Technische Beschreibung
 
 ## 3.1 Systemübersicht
@@ -238,18 +268,9 @@ Nicht Event-gesteuert im engeren Sinne, aber intern:
 
 ## 3.4 Datenmodell
 
-### Analyseklassendiagramm (textuell beschrieben)
+### Analyseklassendiagramm 
 
-- **User**
-  - id, email, password_hash, level, xp, created_at
-- **Task**
-  - id, title, description, difficulty
-- **Prompt**
-  - id, user_id, task_id, content, score, feedback, timestamp
-- **ScoreboardEntry**
-  - user_id, level, total_score
-
-(Diagramm als ER-Diagramm optional visualisierbar)
+![ER-Diagramme](pictures/er.jpg)
 
 ## 3.5 Abläufe
 
@@ -272,10 +293,7 @@ Nicht Event-gesteuert im engeren Sinne, aber intern:
 
 ## 3.6 Entwurf
 
-UML-Diagramme zu Modulen (optional) – empfohlen:
-- TaskController
-- PromptEvaluator
-- AuthService
+![UML-Diagramme zu Modulen ](pictures/uml.jpg)
 
 ## 3.7 Fehlerbehandlung
 
@@ -310,7 +328,9 @@ Verknüpfung mit User Story IDs optional ergänzbar.
 - Supabase wird für Hosting, Auth und ggf. Datenbank genutzt
 - Keine kostenpflichtigen APIs werden verwendet (z. B. OpenAI nur bei Free-Tier)
 - Bewertung der Prompts erfolgt lokal über Keyword-Logik
-- Entwicklung erfolgt auf Mac mit Xcode und Flutter SDK
+- Entwicklung erfolgt Windows mit Visual Studio Code und Flutter SDK
+- App während der Entwicklung hauptsächlich im Webbrowser (Chrome) getestet
+- Finale iOS-Build kann bei Bedarf über einen externen Mac (lokal oder per CI/CD wie Codemagic) erstellt
 
 ### Interne Qualitätsanforderungen
 
@@ -323,18 +343,18 @@ Verknüpfung mit User Story IDs optional ergänzbar.
 
 | Softwarebaustein | Person(en) |
 |------------------|------------|
-| Flutter Frontend | [Name A] |
-| Node.js Backend  | [Name B] |
-| Datenbankmodell  | [Name B] |
-| GUI-Design / Mockups | [Name A] |
+| Flutter Frontend | Mattis Wellenbüscher |
+| Node.js Backend  | Marvin Petschulat |
+| Datenbankmodell  | Marvin Petschulat |
+| GUI-Design / Mockups | Mattis Wellenbüscher |
 | Testing / Dokumentation | beide gemeinsam |
 
 ### Rollen
 
 | Name | Rolle |
 |------|-------|
-| [Name A] | Frontend-Entwickler, GUI, Mockups |
-| [Name B] | Backend-Entwickler, Datenmodell |
+| Mattis Wellenbüscher | Frontend-Entwickler, GUI, Mockups |
+| Marvin Petschulat | Backend-Entwickler, Datenmodell |
 | beide | Tester, Dokumentation |
 
 ## 4.3 Grober Projektplan

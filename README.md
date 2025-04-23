@@ -135,6 +135,7 @@ Die graphische Benutzerschnittstelle wird mit Flutter realisiert und ist für iO
 ### Screens
 
 #### Startscreen
+![Login Bild](pictures/login.jpg)
 - Optionen: Einloggen, Registrieren
 - Weiterleitung zum Dashboard nach erfolgreicher Anmeldung
 - Verknüpfte User Story:
@@ -143,6 +144,7 @@ Die graphische Benutzerschnittstelle wird mit Flutter realisiert und ist für iO
     | Nutzer | mich einloggen | ich auf meine persönlichen Lernfortschritte zugreifen kann | Login funktioniert bei gültigen Zugangsdaten |
 
 #### Dashboard / Übersicht
+![Dashboard Bild](pictures/dashboard.jpg)
 - Anzeige von Level, XP, Fortschritt
 - Verfügbare Aufgaben des Tages/Woche
 - Zugang zu bisherigen Ergebnissen und Profil
@@ -151,6 +153,7 @@ Die graphische Benutzerschnittstelle wird mit Flutter realisiert und ist für iO
   - Überblick über Lernstand
 
 #### Aufgaben-Screen
+![Task Bild](pictures/task.png)
 - Aufgabenstellung wird angezeigt
 - Prompt-Eingabefeld
 - „Senden“-Button zur Bewertung
@@ -161,12 +164,14 @@ Die graphische Benutzerschnittstelle wird mit Flutter realisiert und ist für iO
   - Bewertung auf Basis von Keywords
 
 #### Scoreboard / Vergleich
+![Scoreboard Bild](pictures/scoreboard.png)
 - Anzeige von Highscores (global oder Freunde)
 - Optionaler Filter: Zeitraum, Level
 - Verknüpfte User Story:
   - Motivation durch Vergleich mit anderen
 
 #### Profil / Einstellungen
+![Profile Bild](pictures/profile.png)
 - Account-Details, Fortschritt, Statistiken
 - Abo-Modell / Limitanzeige / Upgrade-Möglichkeit
 

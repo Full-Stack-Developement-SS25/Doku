@@ -415,7 +415,9 @@ Nicht Event-gesteuert im engeren Sinne, aber intern:
 
 ## 3.5 Abläufe
 
-### Beispiel-Aktivitätsdiagramm (vereinfacht, textuell)
+### Beispiel-Aktivitätsdiagramm
+
+![Zustandsdiagramm](pictures/Zustandsdiagramm.PNG)
 
 **Use Case: Aufgabe bearbeiten**
 1. Aufgabe wird angezeigt
@@ -551,3 +553,19 @@ Verknüpfung mit User Story IDs optional ergänzbar.
 - Scoreboard → Kapitel 2.2, 2.4, 3.3  
 - User Story → Kapitel 2.5  
 
+## 5.4 GUI-Mockups
+
+### Startscreen (Login / Registrierung)
+![Startscreen – Login](pictures/login.jpg)
+
+### Dashboard / Übersicht
+![Dashboard](pictures/dashboard.jpg)
+
+### Aufgaben-Screen
+![Aufgaben-Screen](pictures/task.png)
+
+### Scoreboard / Vergleich
+![Scoreboard](pictures/scoreboard.png)
+
+### Profil / Einstellungen
+![Profil](pictures/profile.png)

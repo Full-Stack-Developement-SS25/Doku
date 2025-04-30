@@ -77,25 +77,73 @@ PromptMaster adressiert zentrale Bedürfnisse dieser Nutzergruppe: den Wunsch na
 | **Chancen (Opportunities)** | - Wachsender Bildungs- & KI-Markt<br>- Einbindung in Schulen/Hochschulen<br>- Ausbau zum plattformübergreifenden Lernsystem<br>- Ergänzung durch Community-Features |
 | **Risiken (Threats)** | - Zeit- & Kapazitätsengpässe im studentischen Team<br>- Technische Komplexität bei der Bewertung<br>- Konkurrenz durch große KI-Anbieter mit Lernfunktionen<br>- Monetarisierung schwierig ohne Budget/Kapital |
 
+## 2.1.2 Personas
+---
+
+### **Persona 1: Lisa, 17, Schülerin (Bildungseinrichtung/Zielgruppe)**  
+**Motivation:** Möchte ihre KI-Kompetenzen verbessern, um in der Schule und später im Studium besser mit digitalen Tools umgehen zu können.  
+**Vorerfahrung:** Erste Erfahrungen mit ChatGPT, keine strukturierten Kenntnisse im Prompt Engineering.  
+**Ziel:** Interaktiv und spielerisch lernen, schnelle Erfolgserlebnisse durch Levelsystem.
+
+---
+
+### **Persona 2: Jonas, 22, Informatikstudent (Zielgruppe)**  
+**Motivation:** Möchte sein KI-Wissen im Studium vertiefen und praktische Fähigkeiten zur Anwendung von LLMs erwerben.  
+**Vorerfahrung:** Fundierte Informatikkenntnisse, nutzt KI bereits für Codegenerierung.  
+**Ziel:** Gezielt Prompts optimieren und die Bewertung nachvollziehen, um Best Practices zu entwickeln.
+
+---
+
+### **Persona 3: Frau Dr. Keller, 45, Lehrkraft an einer Hochschule (Bildungseinrichtung)**  
+**Motivation:** Sucht nach modernen Lehrmitteln, um KI-Kompetenz in Vorlesungen einzubetten.  
+**Vorerfahrung:** Didaktische Erfahrung, keine tiefen Kenntnisse in LLM-Technologie.  
+**Ziel:** Skalierbare Lösung für Studierende, begleitende Monitoring-Optionen wünschenswert.
+
+---
+
+### **Persona 4: Herr Berg, 38, Projektmanager in einem Unternehmen (Berufstätiger)**  
+**Motivation:** Möchte Prompts effizient schreiben, um KI-Tools wie ChatGPT bei der Arbeit produktiv zu nutzen.  
+**Vorerfahrung:** Tools wie Notion AI oder ChatGPT gelegentlich genutzt, aber ohne Systematik.  
+**Ziel:** Praxisnahes Training ohne technisches Overhead, schnelle Integration in den Arbeitsalltag.
+
+---
+
+### **Persona 5: Externer KI-Dienstleister (z. B. OpenAI, HuggingFace)**  
+**Rolle:** Stellt die LLM-Funktionalität bereit und wird über APIs angebunden.  
+**Interesse:** Stabiler, transparenter Zugriff auf die Modelle, Einhaltung der Nutzungsrichtlinien, ggf. Branding oder Analytics.
+
+---
+
+### **Persona 6: Marvin & Mattis (Entwicklerteam)**  
+**Motivation:** Erfolgreiche Projektumsetzung, Erfüllung der Hochschulanforderungen.  
+**Rolle:** Technische Planung, Implementierung, Evaluation und Weiterentwicklung.  
+**Ziel:** Sauber dokumentiertes, wartbares und nutzerzentriertes Produkt mit realem Mehrwert.
+
 
 ## 2.2 Funktionale Anforderungen
 
-- Nutzer:innen können sich registrieren, einloggen und ihr Profil verwalten
-- Es gibt aufgabenbasierte Lerneinheiten, die nach Schwierigkeit gestaffelt sind
-- Nutzer:innen können Prompts eingeben, um Aufgaben zu lösen
-- Die Antwort wird auf relevante Schlüsselbegriffe geprüft und bewertet / KI gibt eine Antwort auf den Prompt zurück
-- Nutzer:innen erhalten Feedback & Verbesserungshinweise
-- Punkte/XP werden vergeben; Fortschritt wird gespeichert
-- Es gibt Level, Abzeichen, tägliche/wöchentliche Challenges
-- Scoreboard vergleicht Nutzer:innen
-- Aufgaben sind limitiert, erweiterbar durch Abo-Modell
+- Nutzer:innen können sich registrieren, einloggen und ihr Profil verwalten  
+- Es gibt aufgabenbasierte Lerneinheiten, die nach Schwierigkeit gestaffelt sind  
+- Nutzer:innen können Prompts eingeben, um Aufgaben zu lösen  
+- Die Antwort wird mithilfe eines LLMs (z. B. GPT-4) generiert und anschließend ebenfalls durch ein LLM auf Qualität, Klarheit und Aufgabenbezug bewertet. Dabei erfolgt die Rückmeldung in Form eines Scores sowie erklärendem Feedback bei Premium Version.
+- Nutzer:innen erhalten Feedback & Verbesserungshinweise  
+- Punkte (XP) werden vergeben; Fortschritt wird gespeichert  
+- Es gibt ein Levelsystem, bei dem Nutzer:innen durch das Abschließen von Aufgaben aufsteigen  
+- Abzeichen werden für bestimmte Leistungen vergeben (z. B. perfekte Prompts, Streaks)  
+- Tägliche und wöchentliche Challenges mit spezifischen Aufgabenstellungen fördern die Wiederholung  
+- Scoreboard vergleicht Nutzer:innen (global / mit Freunden / nach Zeitraum filterbar)  
+- Eine grafische Fortschrittsanzeige (XP-Balken, Level, Tagesziel) motiviert dauerhaft  
+- Nutzer:innen können (in der Premium-Version) eigene Challenges erstellen, die nach Review veröffentlicht werden können  
+- Aufgaben sind limitiert, erweiterbar durch Abo-Modell (Freemium)
+
 
 ## 2.3 Nicht-funktionale Anforderungen
 
 ### 2.3.1 Rahmenbedingungen
 
-- iOS-kompatibel (aktuelle Versionen)
 - Flutter als Framework
+- iOS-kompatibel (aktuelle Versionen)
+- Optionale erzeugung von Webseite aus Codebasis
 - Backend basiert auf Node.js mit REST API
 - Datenbank: PostgreSQL
 - (Anbindung an KI Dienst per API)
@@ -204,6 +252,35 @@ Die Umsetzung von PromptMaster erscheint insgesamt als lohnenswertes und gut tra
 
 Das Team verfügt über grundlegende Kenntnisse in Webentwicklung und Softwarearchitektur und ist bereit, sich eigenständig in neue Themen einzuarbeiten – insbesondere in die Bewertung und Analyse von Prompts. Risiken bestehen vor allem in der zeitlichen Belastung, dem Abstimmungsaufwand im Team sowie in der eingeschränkten Verfügbarkeit leistungsstarker KI-APIs (z. B. durch Kosten oder Limits). Auch die Genauigkeit der automatisierten Prompt-Bewertung könnte eine Herausforderung darstellen. Insgesamt stehen Aufwand und Nutzen jedoch in einem sinnvollen Verhältnis, und die Risiken sind bekannt, realistisch eingeschätzt und planbar.
 
+ ## 2.7 Monetarisierungsmodell
+
+PromptMaster nutzt ein **Freemium-Modell**, das den niederschwelligen Einstieg ermöglicht, aber gleichzeitig ein nachhaltiges Geschäftsmodell vorsieht. Die Basisversion enthält alle Kernfunktionen, jedoch mit begrenztem Zugriff auf Inhalte und Lernlevel.
+
+### Modellübersicht
+
+| Funktion / Bereich                               | Free-Version | Premium-Version (Abo)                           |
+|--------------------------------------------------|--------------|--------------------------------------------------|
+| Registrierung & Lernstand speichern              | ✅           | ✅                                               |
+| Max. Anzahl Tägliche Aufgaben                    | ✅ 3         | ✅ unbegrenzt                                    |
+| Feedback-Analyse & Tipps                         | Basis        | Ausführlich, inkl. Beispiel-Prompts             |
+| Gamification (XP, Abzeichen)                     | ✅           | ✅                                               |
+| Scoreboard (nur Top 10 sichtbar)                 | ✅           | Global & Freunde-Vergleich                      |
+| Prompt-Verlauf / Wiederholung                    | nur letzte 3 Aufgaben | Voller Verlauf                          |
+| Nutzerdefinierte Challenges / Custom Tasks       | ❌           | ✅ (zukünftig geplant)                          |
+
+### Zielgruppenbezug
+
+- **Lisa (Schülerin)** nutzt die Free-Version und profitiert vom spielerischen Einstieg.
+- **Jonas (Student)** testet zunächst kostenlos und wechselt auf das Abo, um tiefere Analysefunktionen zu nutzen.
+- **Frau Dr. Keller (Lehrkraft)** sieht in der App Potenzial für den Unterricht; perspektivisch wäre ein Bildungslizenzmodell sinnvoll.
+- **Herr Berg (Berufstätiger)** nutzt die Premium-Version, um gezieltes Feedback zu erhalten und Prompts effizient im Berufsalltag zu optimieren.
+
+### Technische Umsetzung
+
+- Der Accounttyp (Free/Premium) wird im Backend mitgeführt.
+- Feature-Gates im Frontend regeln die Anzeige und Nutzbarkeit von Premium-Funktionen.
+
+
 # 3 Technische Beschreibung
 
 ## 3.1 Systemübersicht
@@ -226,14 +303,73 @@ Protokolle: HTTPS / REST-API
 ### Server (Backend)
 
 - **Web-Schicht:** REST API via Express.js
-- **Logik-Schicht:** Bewertung, Keyword-Analyse, Benutzerlogik
+- **Logik-Schicht:** Bewertung über LLM (z. B. GPT-4) zur Analyse der Promptqualität und zur Generierung von Feedback.
 - **Persistenz-Schicht:** Datenbank-Anbindung via ORM (z. B. Prisma)
 
-### Client (Frontend – Flutter App)
+### Client (Frontend – Flutter App / Web)
 
 - **View-Schicht:** UI-Screens (Dart / Flutter Widgets)
 - **Logik-Schicht:** State Management (Provider / Riverpod)
 - **Kommunikation-Schicht:** HTTP-Client für API-Calls
+- 
+#### Bewertung via LLM
+
+Die zentrale Logik zur Bewertung der Nutzerprompts basiert auf der Nutzung eines externen LLMs über eine API (z. B. OpenAI GPT-4 oder Anthropic Claude). Die Architektur sieht dabei folgenden Ablauf vor:
+
+1. **Prompt-Verarbeitung**  
+   - Nutzer gibt einen Prompt zu einer definierten Aufgabe ein
+   - Der Prompt wird zusammen mit der Aufgabenbeschreibung und Bewertungsanweisungen an das LLM gesendet
+
+2. **Bewertungs-Prompt (System Prompt an LLM)**  
+   Das Backend sendet eine speziell formatierte Anfrage an das LLM, z. B.:
+
+   ```json
+   {
+     "system": "Du bist ein KI-Experte, der Prompts bewerten soll. Prüfe, ob der Prompt geeignet ist, die gestellte Aufgabe zu lösen.",
+     "user": "Aufgabe: Lass die KI eine Zusammenfassung eines Wikipedia-Artikels schreiben. Prompt: 'Fasse mir den Artikel über Photosynthese zusammen in 5 Sätzen.'",
+     "instruction": "Gib einen Score von 0 bis 100 und eine kurze Begründung."
+   }
+   
+3. **Antwort-Parsing**
+   - Die Antwort des LLM wird vom Backend verarbeitet
+   - Extrahiert werden: Score (numerisch), Feedback-Text (string)
+   - Diese Daten werden dem Nutzer über die App zurückgegeben und gespeichert
+
+4. **Bewertungsspeicherung**
+   - Der Score und das Feedback werden in der Datenbank (z. B. PromptEvaluation-Tabelle) gespeichert
+   - Optionale Felder: verwendetes Modell, LLM-Version, Bewertungszeitpunkt, Bewertungsquelle (für eventuelle KI-Modell-spezifische Besonderheiten)
+
+**Vorteile der LLM-Bewertung**
+   - Höhere Flexibilität und semantische Tiefe bei der Analyse
+   - Qualitativ hochwertigeres Feedback als durch Keyword-Matching allein
+   - Möglichkeit zur personalisierten Rückmeldung je nach Lernlevel
+
+### Risiken & Gegenmaßnahmen
+
+| Risiko                              | Gegenmaßnahme                                               |
+|-------------------------------------|--------------------------------------------------------------|
+| **Hohe API-Kosten**                 | Nutzung von Free-Tier-Modellen, ggf. Begrenzung pro Nutzer  |
+| **Intransparente Bewertung durch LLM** | Logging und Versionierung der Bewertungsprompts           |
+| **Lange Antwortzeiten**             | Asynchrone Rückmeldung mit Ladeanzeige im UI                |
+| **Fehlende Konsistenz bei Bewertungen** | Standardisierte Prompts, deterministische Systemansagen  |
+
+**Beispiel-Nutzung**
+Systemrolle: Du bist ein KI-Experte, der Prompts für LLMs bewertet. 
+Deine Aufgabe ist es, einen vom Nutzer formulierten Prompt zu beurteilen: 
+Ist der Prompt geeignet, die gestellte Aufgabe zu erfüllen? 
+
+Bewerte auf einer Skala von 0 bis 100, gib eine Begründung, 
+und mache einen konkreten Verbesserungsvorschlag.
+
+Eingabe:
+- Aufgabe: [Aufgabenbeschreibung]
+- Prompt: [User Prompt]
+
+Ausgabe (bitte genau im folgenden Format):
+Score: <Zahl>
+Feedback: <Begründung>
+Verbesserungsvorschlag: <Text>
+
 
 ### 3.2.1 Technologieauswahl
 
@@ -255,7 +391,7 @@ Protokolle: HTTPS / REST-API
 | Ziel | Methode | Pfad | Beschreibung |
 |------|---------|------|--------------|
 | Aufgaben abrufen | GET | /api/tasks | Gibt zufällige/niveauabhängige Aufgaben zurück |
-| Prompt senden | POST | /api/prompt | Bewertet einen Prompt auf Basis der Aufgabenstellung |
+| Prompt senden | POST | /api/prompt | Bewertet einen Prompt mithilfe eines LLMs auf Basis der Aufgabenstellung. Liefert eine KI-generierte Rückmeldung inkl. Score, Begründung und optionaler Verbesserungshinweise zurück. |
 | Authentifizierung | POST | /api/auth/login | Login via Email & Passwort |
 | Benutzerinfo | GET | /api/user/me | Gibt Nutzerdaten & Fortschritt zurück |
 | Scoreboard | GET | /api/scores | Top-Listen für Level & XP |
@@ -315,7 +451,7 @@ Nicht Event-gesteuert im engeren Sinne, aber intern:
 
 | Komponente | Testziel |
 |------------|----------|
-| API /prompt | Bewertung erfolgt korrekt bei Keyword-Erkennung |
+| API /prompt | Bewertung erfolgt korrekt durch LLM inklusive Score und Feedbacktext |
 | API /tasks | Gibt Aufgabe abhängig vom Level zurück |
 | UI | Scoreanzeige reagiert auf Fortschritt |
 | Auth | Registrierung & Login mit Token funktioniert |
@@ -327,12 +463,12 @@ Verknüpfung mit User Story IDs optional ergänzbar.
 ## 4.1 Annahmen
 
 - Das Produkt wird ausschließlich für iOS-Geräte entwickelt (iPhone/iPad)
-- Flutter wird verwendet, da es Cross-Platform-fähig ist (für spätere Erweiterungen)
+- Flutter wird verwendet, da es Cross-Platform-fähig ist. Im Rahmen des Projekts ist vorgesehen, das iOS-Frontend zusätzlich durch eine Web-Version zu erweitern, um auch browserbasierte Nutzung auf Desktop-Systemen zu ermöglichen.
 - Das Backend wird mit Node.js und Express implementiert
 - PostgreSQL wird als relationale Datenbank verwendet
 - Supabase wird für Hosting, Auth und ggf. Datenbank genutzt
 - Keine kostenpflichtigen APIs werden verwendet (z. B. OpenAI nur bei Free-Tier)
-- Bewertung der Prompts erfolgt lokal über Keyword-Logik
+- Bewertung der Prompts erfolgt über die Anbindung eines LLMs (z. B. GPT-4) über API
 - Entwicklung erfolgt Windows mit Visual Studio Code und Flutter SDK
 - App während der Entwicklung hauptsächlich im Webbrowser (Chrome) getestet
 - Finale iOS-Build kann bei Bedarf über einen externen Mac (lokal oder per CI/CD wie Codemagic) erstellt
